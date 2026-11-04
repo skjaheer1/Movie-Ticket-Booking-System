@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #141414;
+    color: white;
+}
+
+header {
+    background: #222;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #ff3838;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #ff3838;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #242424, #5b1111);
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.btn {
+    background: #ff3838;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#movies {
+    padding: 50px;
+    text-align: center;
+}
+
+#movies h2 {
+    margin-bottom: 30px;
+}
+
+.movie-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.movie {
+    background: #292929;
+    padding: 35px;
+    width: 220px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.movie:hover {
+    transform: translateY(-8px);
+    background: #3b2020;
+}
+
+.movie h3 {
+    color: #ff3838;
+    margin-bottom: 15px;
+}
+
+#booking {
+    padding: 50px 20px;
+    text-align: center;
+    background: #202020;
+}
+
+#booking h2 {
+    margin-bottom: 30px;
+    color: #ff3838;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select {
+    padding: 14px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 14px;
+    background: #ff3838;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #cc2020;
+}

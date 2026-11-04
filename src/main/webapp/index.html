@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Movie Ticket Booking</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#movies">Movies</a>
+            <a href="#booking">Book Tickets</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to Movie World</h2>
+        <p>Book your favourite movie tickets online!</p>
+        <a href="#movies" class="btn">Explore Movies</a>
+    </section>
+
+    <section id="movies">
+        <h2>Available Movies</h2>
+
+        <div class="movie-container">
+            <div class="movie">
+                <h3>Avatar</h3>
+                <p>Ticket Price: ₹200</p>
+            </div>
+
+            <div class="movie">
+                <h3>Interstellar</h3>
+                <p>Ticket Price: ₹180</p>
+            </div>
+
+            <div class="movie">
+                <h3>Inception</h3>
+                <p>Ticket Price: ₹150</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Tickets</h2>
+
+        <form action="book" method="post">
+
+            <input type="text" name="name"
+                   placeholder="Customer Name" required>
+
+            <input type="email" name="email"
+                   placeholder="Email Address" required>
+
+            <select name="movieId" required>
+                <option value="">Select Movie</option>
+                <option value="1">Avatar - ₹200</option>
+                <option value="2">Interstellar - ₹180</option>
+                <option value="3">Inception - ₹150</option>
+            </select>
+
+            <input type="number" name="tickets"
+                   placeholder="Number of Tickets"
+                   min="1" required>
+
+            <select name="showTime" required>
+                <option value="">Select Show Time</option>
+                <option value="10 AM">10 AM</option>
+                <option value="2 PM">2 PM</option>
+                <option value="6 PM">6 PM</option>
+                <option value="9 PM">9 PM</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+
+        </form>
+    </section>
+
+</body>
+</html>
